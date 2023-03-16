@@ -1,0 +1,15 @@
+program example2
+ declare x , y , z ;
+ function p1( in x , inout z , inout v)
+ declare w ;
+ if ( x < y ) then
+ w := x + y
+ else
+ w := x * y
+ endif ;
+ return 0
+ endfunction
+ x := 1 ;
+ y := 2 ;
+ z := p1 ( in x + y , inout z , inout y )
+endprogram

@@ -1,0 +1,23 @@
+program example2
+ declare x , y , z ;
+ function p1( in x , inout z , inout v)
+ declare w ;
+ function p2 ( inout z )
+ declare q ;
+ q := y + w ;
+ z := q * x ;
+ return 0
+ endfunction
+ if ( x < y ) then
+ w := x + y
+ else
+ w := x * y
+ endif ;
+ z := p2( inout z ) ;
+ return 0
+ endfunction
+
+ x := 1 ;
+ y := 2 ;
+ z := p1 ( in x + y , inout z , inout y )
+endprogram

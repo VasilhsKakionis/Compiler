@@ -1,0 +1,23 @@
+program example1
+ declare d , i , g , f ;
+ function two ( in g )
+ function three ( in g , inout x , inandout m )
+ declare k , j ;
+ k := g ;
+ dowhile
+ if ( k > i ) then
+ k := k - 1
+ endif ;
+ j := j * k ;
+ k := k + g
+ enddowhile ( k < 1 ) ;
+ m := j ;
+ return m + 1 ;
+ x := 7
+ endfunction
+ i := three ( in i + 2 , inout d , inandout f ) ;
+ return 0
+ endfunction
+ i := 5 ;
+ g := 1 ;
+endprogram
